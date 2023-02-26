@@ -19,6 +19,14 @@ spring:
       min-idle: 1
       # 最大等待时间
       max-wait: 60000
+  #html存放的具体路径，可进行自定义，示例：resources/templates
+  thymeleaf:
+    prefix: classpath:/templates/
+    encodin: UTF-8
+    cache: false
+    suffix: .html
+    servlet:
+      content-type: text/html
 
 
 
@@ -31,3 +39,5 @@ mybatis:
   mapper-locations: "classpath:com/tq/mapper/*Mapper.xml"
   #  配置model包路径
   type-aliases-package: "com.tq.mapper.entiy.*"
+
+
