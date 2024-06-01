@@ -1,5 +1,6 @@
 package com.tq.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,10 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2024/5/29-21:04
  */
 @RestController
+@Slf4j
 public class Test1 {
 
     @GetMapping("/jacoc")
     public String jacoc() {
-        return "jacoc";
+        String s = "hello";
+        return s+"jacoc";
     }
 }
