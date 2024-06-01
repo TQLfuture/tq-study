@@ -14,7 +14,8 @@ public class Test1 {
 
     @GetMapping("/jacoc")
     public String jacoc() {
+        String bbbb = "bbbb";
         String s = "hello";
-        return s+"jacoc";
+        return bbbb+s+"jacoc";
     }
 }
